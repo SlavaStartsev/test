@@ -1,0 +1,60 @@
+[
+  {
+    "name": "development",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "cypher-development",
+    "synchronize": true,
+    "logging": true,
+    "entities": ["src/entity/**/*.*"],
+    "migrations": ["src/migration/**/*.*"],
+    "subscribers": ["src/subscriber/**/*.*"],
+    "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    }
+  },
+  {
+    "name": "test",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "cypher-test",
+    "synchronize": true,
+    "dropSchema": true,
+    "entities": ["src/entity/**/*.*"],
+    "migrations": ["src/migration/**/*.*"],
+    "subscribers": ["src/subscriber/**/*.*"],
+    "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    }
+  },
+  {
+    "name": "production",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "cypher",
+    "synchronize": true,
+    "dropSchema": false,
+    "logging": false,
+    "entities": ["src/entity/**/*.*"],
+    "migrations": ["src/migration/**/*.*"],
+    "subscribers": ["src/subscriber/**/*.*"],
+    "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    }
+  }
+]

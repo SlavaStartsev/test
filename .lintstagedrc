@@ -1,0 +1,4 @@
+{
+  "*.{js,jsx,ts,tsx}": ["jest --findRelatedTests", "prettier --write", "git add"],
+  "*.{json,html,css,scss,md}": ["prettier --write", "git add"]
+}

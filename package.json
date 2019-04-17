@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {},
+  "workspaces": {
+    "packages": [
+      "packages/client",
+      "packages/server"
+    ]
+  },
+  "resolutions": {
+    "graphql": "^14.1.1"
+  },
+  "devDependencies": {
+    "lerna": "^3.6.0",
+    "prettier": "^1.15.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0"
+  }
+}
